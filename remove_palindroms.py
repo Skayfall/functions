@@ -3,4 +3,3 @@ def remove_palindroms(spells):
         if i == i[::-1]:
             spells.remove(i)
     return spells
-
