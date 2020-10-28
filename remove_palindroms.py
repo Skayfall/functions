@@ -1,5 +1,6 @@
 def remove_palindroms(spells):
-    for i in spells:
-        if i.lower() == i.lower()[::-1]:
+    lst = [i for i in spells]
+    for i in lst:
+        if i.lower().replace(' ', '') == i.lower()[::-1].replace(' ', ''):
             spells.remove(i)
     return spells
